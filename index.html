@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <title>Survey Form Page</title>
+    <link rel = "stylesheet" href = "stylesheet.css">
+    <body>
+        <div>
+            <header>
+                <h1 id = "title">Free Code Camp survey
+                </h1>
+            <p id = "description">This is a very simple description of the survey</p>
+            </header>
+            <form id = "survey-form">
+                <div>
+                    <label id = "name-label" for = "name">
+                        Name
+                    </label>
+                    <input id = "name" type = "text" name = "name" placeholder = "enter your name" required = "">    
+                </div>
+                <div>
+                    <!-- Proper div element distribution goes a long way with -->
+                    <label id = "email-label" for = "email"> e-mail</label>
+                    <input id = "email" type = "text" name = "email" placeholder = "enter your e-mail here" required = "">
+                </div>
+                <div>
+                    <label id = "number-label" for = "number">Age <span>(optional)</span></label>
+                    <input id = "number" type = "number" name = "age" min = "10" max = "90" placeholder = "enter your age">
+                </div>
+                <div>
+                    <p>Which option better describes you?</p>
+                    <select id = "dropdown" name = "dropdown" required = "">
+                        <option disabled = "" selected = "" value = "">Select the desired option</option>
+                        <option value = "creative">Creative</option>
+                        <option value = "techie">Techie</option>
+                        <option value = "artistic">Artistic</option>
+                        <option value = "outdoorsperson">Outdoors person</option>
+                        <option value = "musician">Musician</option>
+                        <option value = "other">Other</option>
+                    </select>
+                </div>
+                <!-- See all I needed was some fiddling with my knowledge and it isn't hard at all to master these skills -->
+                <div>
+                    <p>How likely are you to start a career in Web Development?</p>
+                    <label>
+                        <input name = "user-career-choice" value = "very likely" type = "radio" checked = "">
+                        Very Likely
+                    </label>
+                    <label>
+                        <input name = "user-career-choice" value = "likely" type = "radio" checked = "">
+                        Likely
+                    </label>
+                    <label>
+                        <input name = "user-career-choice" value = "not very likely" type = "radio" checked = "">
+                        Not very likely
+                    </label>
+                    <label>
+                        <input name = "user-career-choice" value = "not at all" type = "radio" checked = "">
+                        Not at all
+                    </label>
+                </div>
+                <div>
+                    <p>Which Computer Science field are you more interested in</p>
+                    <select id = "dropdown2" name = "dropdown2" required = "">
+                        <option disabled = "" selected = "" value = "">Select the field</option>
+                        <option value = "Artificial Intelligence">Artificial Intelligence</option>
+                        <option value = "Algorithms">Algorithms</option>
+                        <option value = "Cryptography">Cryptography</option>
+                        <option value = "Formal Languages">Formal Languages</option>
+                        <option value = "Automata Theroy">Automata Theory</option>
+                        <option value = "Computability">Computability</option>
+                        <option value = "not present in the list">Not present in the selection</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Which of these fields would you consider self-studying?</p>
+                    <label>
+                        <input name = "preferences" value = "Information Security" type = "checkbox"> Information Security
+                    </label>
+                    <label>
+                        <input name = "preferences" value = "Compilers and Programming languages" type = "checkbox"> Compilers and Programming languages
+                    </label>
+                    <label>
+                        <input name = "preferences" value = "Deep Learning" type = "checkbox"> Deep Learning
+                    </label>
+                    <label>
+                        <input name = "preferences" value = "Software Engineering" type = "checkbox"> Software Engineering
+                    </label>
+                </div>
+                <div>
+                    <p>What is the last school that you attended?</p>
+                    <textarea id = "comments" name = "last school" placeholder = "enter your school here"></textarea> 
+                </div>
+                <div>
+                    <button id = "submit" type = "submit">Submit</button>
+                </div>
+            </form>
+            <!-- When drawing out the DOM Tree I can clearly see that the ordered tree that comes out is fairly well structured -->
+        </div>
+    </body>
+    <!-- Proper incapsulation is the key at a proper HTML structure -->
+</html>
