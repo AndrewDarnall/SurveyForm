@@ -1,0 +1,101 @@
+/* Form stylesheet */
+
+/* Well structuring the CSS stylesheet is also another mandatory good software engineering practice */
+
+/* For changes to be applied at the root fo the document, much like the html tag and it is a great place to define 
+   the variables used throughout the document */
+:root {
+        --cp-font-family: 'Lato' 'Lucida Sans Unicode'; /*This way based on the browser there are alternatives*/
+        --background: url(https://thumbs.dreamstime.com/z/web-developer-programmer-monitor-screen-display-working-software-codes-office-computing-cyberspace-future-innovation-208362323.jpg);
+}
+
+div {
+    justify-self: center;
+}
+
+#header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+
+/* text align and other types of aligning make a difference */
+
+.form-elements {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form-control-blocks {
+    display: block; /* this forces it to go to a new line */
+    width: 100%;
+    height: 2,375rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0,3rem;
+}
+
+.form-control-radio {
+    display: block;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    width: 100%;
+    height: 2,375rem;
+    border: 1px solid transparent;
+}
+
+/* rem means the root element's font size */
+
+.box {
+    text-align: center;
+}
+
+body {
+    display: block;
+    margin-top: 8px;
+    position: relative;
+    background-image: var(--background);
+    background-color: rgba(0,0,58,0.5);
+}
+
+html {
+    font-family: var(--cp-font-family);
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    background-color: rgba(0,0,128,0.9);
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+/* implementing responsiveness */
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 678px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* sometimes alligning with the margin is the best option */
+
+/* 
+    it is important not to mistake the difference between a pseudo class and a class or selectors in CSS 
+    pseudo classes can be combined with CSS classes and selectors, this is some cool CSS feature!
+
+    there is excellent documentation in the W3Schools website and the mozilla developer page
+
+    the * is the CSS universal selector
+*/
